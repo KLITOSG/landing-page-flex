@@ -4,7 +4,96 @@
     padding: 0;
 }
 
-body{
-    height: 100dvh;
+
+.flex-container{
+    height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: #1F2937;
+    height: 50px ;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+header .nav, header .sec_one{
+    padding: 0 50px 0 50px;
+    flex-shrink: 2;  
+    flex-wrap: wrap;
+}
+header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 50px;
+}
+header .nav p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    flex-shrink: 2;
+}
+header .nav .menu{
+ display: flex; 
+ flex-wrap: wrap;
+ justify-content: space-between;
+ list-style: none;
+ width: 500px;
+ flex-shrink: 2;
+}
+header .nav .menu a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+header .sec_one{
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .text{
+    width: 500px;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-shrink: 2;
+}
+header .sec_one .text #one{
+  font-size: 48px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  color:#F9FAF8;
+  flex-shrink: 2;
+}
+header .sec_one .text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F9FAF8;
+    flex-shrink: 2;
+}
+header .sec_one .button {
+    width: 90px;
+    height: 40px;
+    background-color: rgb(97, 97, 230);
+    border-radius:30px;
+    text-align: center;
+    padding: 10px 0 9px 0;
+    flex-shrink: 2;
+}
+header .sec_one .button a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: #F9FAF8;
+    font-weight: bold;
+    flex-shrink: 2;
+}
+header .sec_one .placeholder{
+    height: 300px;
+     width: 700px ;
+    background-color: rgba(202, 200, 200, 0.555);
+    border-radius: 10px;
+    flex-shrink: 2;
 }
