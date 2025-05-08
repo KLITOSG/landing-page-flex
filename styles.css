@@ -6,21 +6,18 @@
 
 
 .flex-container{
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 header{
     background-color: #1F2937;
-    height: 50px ;
     display: flex;
     flex-direction: column;
-    flex:1;
+   
 }
 header .nav, header .sec_one{
     padding: 0 50px 0 50px;
-    flex-shrink: 2;  
     flex-wrap: wrap;
 }
 header .nav{
@@ -30,9 +27,9 @@ header .nav{
     height: 50px;
 }
 header .nav p{
+    font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    flex-shrink: 2;
 }
 header .nav .menu{
  display: flex; 
@@ -40,7 +37,6 @@ header .nav .menu{
  justify-content: space-between;
  list-style: none;
  width: 500px;
- flex-shrink: 2;
 }
 header .nav .menu a{
     text-decoration: none;
@@ -52,48 +48,175 @@ header .sec_one{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
 }
 header .text{
     width: 500px;
-    height: 70%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-    flex-shrink: 2;
+    gap:15px;
+    
 }
 header .sec_one .text #one{
   font-size: 48px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
   color:#F9FAF8;
-  flex-shrink: 2;
 }
 header .sec_one .text p{
+    font-size:18px; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #F9FAF8;
-    flex-shrink: 2;
 }
 header .sec_one .button {
-    width: 90px;
-    height: 40px;
-    background-color: rgb(97, 97, 230);
+    width: fit-content;
+     background-color: rgb(97, 97, 230);
     border-radius:30px;
     text-align: center;
-    padding: 10px 0 9px 0;
-    flex-shrink: 2;
+    padding: 10px 20px;
 }
 header .sec_one .button a{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
     color: #F9FAF8;
     font-weight: bold;
-    flex-shrink: 2;
 }
 header .sec_one .placeholder{
-    height: 300px;
-     width: 700px ;
+    height: 250px;
+    width: 700px ;
     background-color: rgba(202, 200, 200, 0.555);
     border-radius: 10px;
-    flex-shrink: 2;
+    margin-bottom: 50px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+main .sec_two, .sec_three, .sec_four{
+ flex-wrap: wrap;
+}
+main .sec_two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+main .sec_two .text_two{
+    padding-top: 20px;
+    font-size: 36px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1F2937;
+}
+main .sec_two .boxes{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+    flex-wrap: wrap;
+    width: 40%;
+}
+main .sec_two .boxes .box{
+    flex-basis: 80px;
+    height: 80px;
+    border: 2px solid rgb(78, 78, 211);
+    border-radius: 10px;
+}
+main .sec_two .boxes .info p{
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+}
+ .sec_three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #E5E7EB;
+    margin-top: 40px;
+    
+}
+ .sec_three .quote{
+  margin: 150px 0 150px 0;
+  display: flex ;
+  flex-direction: column;
+  gap: 30px;
+}
+.sec_three .quote p{
+  font-style: italic;
+  font-size: 36px;
+  color: #1F2937;
+  padding: 0 100px;
+}
+.sec_three .quote .name{
+    align-self: flex-end;
+    padding-left: 10px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: 600;
+}
+.sec_four{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sec_four .action{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 70px;
+    margin: 100px 0 100px 0;
+    background-color: #3882F6;
+    border-radius: 5px;
+}
+.sec_four .action .attention{
+    margin: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sec_four .action .attention .call{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.sec_four .action .attention p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.sec_four .action .sign_in{
+  align-self: center;
+  margin-right: 80px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.sec_four .action .sign_in a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding: 5px 20px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+}
+footer p{
+    padding: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: white;
 }
